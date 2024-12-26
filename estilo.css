@@ -1,19 +1,10 @@
 
-body {
-    /* Define um fundo com um degradê linear de rosa para roxo */
-    background: linear-gradient(135deg, #ff1493, #6a0dad);
-    /* Ajusta para cobrir a tela toda */
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  
+.nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22pt;
+    font-family: 'Times New Roman', Times, serif;}
 
-
-*{
-   font-family: Arial, Helvetica, sans-serif;
-}
 .nav{
     display: flex;
     width: 100%;
@@ -21,47 +12,119 @@ body {
     left: 0;
     top: 0px;
     gap: 20px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(44, 169, 61);
     height: 50px;
     overflow-x: auto;
     justify-content: center;
     align-items: center;
 }
-.Lpl{
-    padding: 40px;
-}
-h1{
-    padding: 40px;
-}
-.nav a{
-    text-decoration: none;
-    color: rgb(233, 233, 233);
-    font-size: 25pt;
-font-family: 'Times New Roman', Times, serif;
+
+/* Definindo o fundo e estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff3b3f, #ff4c68);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
 }
 
+/* Estilo do título */
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    font-family: 'Christmas', cursive;
+}
 
-.lic{
-    padding: 40px;
+/* Estilo do subtítulo e texto */
+p {
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.6;
 }
-.ingles{
-    padding: 40px;
+
+/* Estilo do botão de ação */
+button {
+    background-color: #ff5c8d;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
-.Pwilliam{
-    border-radius: 100%;
-    border-radius: 100%;
-    
-    
+
+button:hover {
+    background-color: #ff3b5e;
 }
-.fotoetec img{
+
+/* Adicionando uma decoração com brilhos de Natal */
+.decoracao {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 40px;
+    animation: brilhar 1.5s infinite alternate;
+}
+
+/* Animação de brilho */
+@keyframes brilhar {
+    0% {
+        text-shadow: 0 0 10px #ff4c68, 0 0 20px #ff4c68, 0 0 30px #ff4c68;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff3b3f, 0 0 30px #ff3b3f, 0 0 40px #ff3b3f;
+    }
+}
+
+/* Estilo para caixas de presente */
+.box-presente {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.box-presente::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 180px;
+    height: 180px;
+    border: 10px solid #ff3b5e;
     border-radius: 50%;
-    position:absolute;
-    right: 30px;
-    top: 65px;
-    width: 160px;
-}
-p{
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    font-size: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+.box-presente .ribbon {
+    background-color: #ff3b3f;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+/* Estilos para os links */
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
